@@ -1,29 +1,17 @@
 # DiscordBots
-//This is where you will post your code!//
+const Discord = require('discord.js')
+const bot = new Discord.Client();
+bot.login('NDkwNzIyNTk3ODY5NDUzMzEz.DoBcEg.kB8Z2Zs-AyDvbmmbLizGtUTuNnA');
+//to turn off bot do Ctrl+c//
+//to turn on bot do node . in terminal//
+bot.on('message' , function(message){
 
-ex:
-<wpml-config>
-    <shortcodes>
-        <shortcode>
-            <tag>ct_headline</tag>
-        </shortcode>
-        <shortcode>
-            <tag>ct_text_block</tag>
-        </shortcode>
-        <shortcode>
-            <tag>ct_paragraph</tag>
-        </shortcode>
-        <shortcode>
-            <tag>ct_li</tag>
-        </shortcode>
-        <shortcode>
-            <tag>ct_link_text</tag>
-        </shortcode>
-        <shortcode>
-            <tag>example_shortcode_with_attributes</tag>
-            <attributes>
-                <attribute>my_attribute</attribute>
-            </attributes>
-        </shortcode>
-    </shortcodes>
-</wpml-config>
+    if(message.content == '$hello')
+    {
+        message.reply('i love you to!');
+    }
+
+
+});  
+
+
